@@ -12,28 +12,41 @@
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
     <!-- LINK TO YOUR STYLES -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
+    <!--Leaflet-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
+    <!--Easy Button-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <!--Tag/Filter Button-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button@0.0.5/src/leaflet-tag-filter-button.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button@0.0.5/src/leaflet-tag-filter-button.min.js"></script>
   </head>
   <body>
-    <div>
+    <div class="header">
       <h1>Boston Architecture Map</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="main">
-      <!--<div class="filter">
-        <label for="search">Search
-          <input type="text" id="search" name="search">
-        </label> -->
+      <div class="welcome">
+        <h2>Welcome to an interactive map of Boston's architecture.</h2>
+        <p>Click the icons to filter buildings by time period or neighborhood.</p>
+        <p>Click a marker to learn more. </p>
+        <div id="boathouse">
+          <h2>Community Rowing Boathouse</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet amet sint ipsam aperiam repudiandae dolor optio sapiente inventore provident dicta, assumenda explicabo aliquam laborum rerum accusantium non nisi reiciendis asperiores.</p>
+        </div>
       </div>
       <div id="map"></div>
     </div>
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
   </body>
 </html>
