@@ -62,10 +62,3 @@ jQuery('.easy-button-button').click(function() {
 //ica
 //mit
 //carpenter
-//bolling
-//eastbpl
-//abbotsford
-//blake
-//treehouse
-//mfa
-//izzystu
