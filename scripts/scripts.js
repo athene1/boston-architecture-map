@@ -2,13 +2,13 @@ var map = L.map('map').setView([42.34997, -71.08689], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-var stadiaLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.{ext}', {
+/*var stadiaLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.{ext}', {
 	minZoom: 0,
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	ext: 'png'
 });
-stadiaLayer.addTo(map);
+stadiaLayer.addTo(map); */
 
 var boathouseMarker = L.marker([42.35871, -71.1657], {tags: ['2000-','Brighton']}).addTo(map).bindPopup("<b>Community Rowing Boathouse</b><br><button>2008</button><button>Brighton</button><br>Anmahian Winton Architects").openPopup();
 var faneuilMarker = L.marker([42.36018, -71.05511], {tags: ['1700-1799','North End']}).addTo(map).bindPopup("<b>Faneuil Hall</b><br><button>1742</button><button>North End</button><br>John Smibert & Charles Bulfinch").openPopup();
