@@ -34,6 +34,8 @@ var izzystuMarker = L.marker([42.33814, -71.09905], {tags: ['1900-1949', 'Fenway
     }
 }
 
+PopupEvent.addEventListener(popupopen, showBoathouse);
+
 var timePeriod = L.control.tagFilterButton({
     data: ['1600-1699','1700-1799','1800-1899','1900-1949','1950-1999','2000-'],
   filterOnEveryClick: true,
