@@ -195,16 +195,26 @@ const data = [
 
 function markerOnClick() {
     console.log('markerOnClick is running');
-    console.log(data.id);
+    console.log(data);
+
+    data.forEach ( item => {
+
+        if (item.id == '') { }
+
+    });
+
+
     const cardDiv = document.createElement(`div`);
-    const cardTitle = document.createElement(`h1`);
+    console.log(cardDiv);
+    const h1 = document.createElement('h1');
+    console.log(h1);
     h1.textContent = data.cardTitle;
     cardDiv.appendChild(h1);
-    const cardText = document.createElement(`p`);
-    p.textContent = data.cardDescription;
-    cardDiv.appendChild(p);
+    const cardText = document.createElement('p');
+    cardText.textContent = data.cardDescription;
+    cardDiv.appendChild(cardText);
     const element = document.getElementsByClassName("welcome");
-    element.appendChild(cardDiv);
+    element[0].appendChild(cardDiv);
 }
 
 /*or try...
