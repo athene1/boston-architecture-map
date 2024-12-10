@@ -193,8 +193,9 @@ const data = [
 
 ]
 
-function markerOnClick(data) {
+function markerOnClick() {
     console.log('markerOnClick is running');
+    console.log(data.id);
     const cardDiv = document.createElement(`div`);
     const cardTitle = document.createElement(`h1`);
     h1.textContent = data.cardTitle;
@@ -205,6 +206,19 @@ function markerOnClick(data) {
     const element = document.getElementsByClassName("welcome");
     element.appendChild(cardDiv);
 }
+
+/*or try...
+function markerOnClick {
+    const ele = document.getElementById('cardcontainer');
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML =  
+    `<h3>data.cardTitle</h3>
+    <p>data.cardDescription</p>
+    `;
+ele.appendChild(newDiv);
+}
+*/
+
 /*
 const p = document.createElement('p');
 	p.textcontent = `Thank you ${order.firstName} ${order.lastName} for your purchase of ${order.tickets} ticket(s) for a total of $${order.total}.`;
@@ -217,6 +231,14 @@ para.appendChild(node);
 
 const element = document.getElementById("div1");
 element.appendChild(para);
+
+const ele = document.getElementById('cardcontainer');
+const newDiv = document.createElement('div');
+newDiv.innerHTML =  
+    `<h3>data.cardTitle</h3>
+    <p>data.cardDescription</p>
+    `;
+            ele.appendChild(newDiv);
 */
 data.forEach(function(data) {
     const marker = L.marker(data.latlong, {tags: [(data.markerTags)]}).on('click', markerOnClick).addTo(map).bindPopup(data.markerText).openPopup();
