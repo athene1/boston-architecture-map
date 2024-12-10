@@ -5,26 +5,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-/*const timePeriodFilter = L.control.tagFilterButton({
-    data: ['1600-1699','1700-1799','1800-1899','1900-1949','1950-1999','2000-'],
-  filterOnEveryClick: true,
-  icon: '<i class="fa fa-suitcase"></i>',
-}).addTo(map);
-//don't forget to change the icons
-
-const neighborhoodFilter = L.control.tagFilterButton({
-    data: ['Brighton', 'North End', 'Back Bay', 'Seaport', 'Cambridge', 'Roxbury', 'East Boston', 'Dorchester', 'Fenway'],
-  filterOnEveryClick: true,
-    icon: '<i class="fa fa-pagelines"></i>',
-}).addTo(map);
-
-jQuery('.easy-button-button').click(function() {
-    target = jQuery('.easy-button-button').not(this);
-    target.parent().find('.tag-filter-tags-container').css({
-        'display' : 'none',
-    });
-});*/
-
 
 const data = [
 {
@@ -37,7 +17,7 @@ const data = [
     architect: 'Anmahian Winton Architects',
     cardTitle: 'Community Rowing Boathouse',
     cardDescription: 'This sustainable design won the Harleston Parker Medal, awarded to the most beautiful structure in Boston each year. The boathouse is open to all, aiming to bring the Charles River to everyone. ',
-    img: '/images/boathouse.png',
+    img: './images/boathouse.png',
 },
 {
     id: 'faneuilMarker',
@@ -48,8 +28,8 @@ const data = [
     date: '1742',
     architect: 'John Smibert & Charles Bulfinch',
     cardTitle: 'Faneuil Hall',
-    cardDescription: 'lorem ipsum',
-    img: '/images/faneuil.jpg',
+    cardDescription: 'This boston landmark fully burnt down and has been rebuilt with the original shell. Today, it is still a marketplace like it was in the 18th century.',
+    img: '.images/faneuil.jpg',
 },
 {
     id: 'bplMarker',
@@ -60,8 +40,8 @@ const data = [
     date: '1895',
     architect: 'McKim, Mead & White',
     cardTitle: 'Boston Public Library',
-    cardDescription: 'lorem ipsum',
-    img: '/images/bpl.jpg',
+    cardDescription: "The original wing of the BPL at Copley Square was modeled after the Paris Bibliothèque Sainte-Geneviève. The facade features references to Boston's history and a message of knowledge for all.",
+    img: './images/bpl.jpg',
 },
 {
     id: 'cityHallMarker',
@@ -72,8 +52,8 @@ const data = [
     date: '1968',
     architect: 'Michael McKinnell, Gerhard Kallmann & Edward Knowles',
     cardTitle: 'City Hall',
-    cardDescription: 'lorem ipsum',
-    img: '/images/cityhall.jpg',
+    cardDescription: "Understood by some to be a culmination of tensions between the city and it's people, Boston's city hall is infamous. Love it or hate it, this modern brutalist building is unmistakable.",
+    img: './images/cityhall.jpg',
 },
 {
     id: 'icaMarker',
@@ -84,8 +64,8 @@ const data = [
     date: '2006',
     architect: 'Diller Scofidio + Renfro',
     cardTitle: 'Institute of Contemporary Art',
-    cardDescription: 'lorem ipsum',
-    img: '/images/ICA.jpg',
+    cardDescription: 'The ICA suspends over the Seaport waterfront, allowing museum patrons to feel as if they are walking over water. The contemporary architectural style mirrors the contemporary art housed within.',
+    img: './images/ICA.jpg',
 },
 {
     id: 'mitMarker',
@@ -96,8 +76,8 @@ const data = [
     date: '1955',
     architect: 'Eero Saarinen',
     cardTitle: 'MIT Chapel',
-    cardDescription: 'lorem ipsum',
-    img: '/images/mitchapel.jpeg',
+    cardDescription: "Although unimpressive from the outside, the MIT Chapel designed by famed architect Eero Saarinen brought the avant-garde to MIT's campus. The chapel gives worshippers a sense of being enclosed yet connected with the heavens.",
+    img: './images/mitchapel.jpeg',
 },
 {
     id: 'carpenterMarker',
@@ -108,8 +88,8 @@ const data = [
     date: '1963',
     architect: 'Le Corbusier with Sert, Jackson & Gourley',
     cardTitle: 'Carpenter Center for the Visual Arts',
-    cardDescription: 'lorem ipsum',
-    img: '/images/carpenter.jpg',
+    cardDescription: "As Le Corbusier's only North American structure, the Carpenter Center on Harvard's campus is well-known. The building looks distinctly different depending on which angle it is approached from.",
+    img: './images/carpenter.jpg',
 },
 {
     id: 'bollingMarker',
@@ -120,8 +100,8 @@ const data = [
     date: '2015',
     architect: 'Mecanoo & Sasaki',
     cardTitle: 'Bruce C. Bolling Municipal Building',
-    cardDescription: 'lorem ipsum',
-    img: '/images/bolling.jpg',
+    cardDescription: 'Right in Nubian Square, this building incorporates the historic Ferdinand Furniture Building. This multipurpose center includes several uses open to the community.',
+    img: './images/bolling.jpg',
 },
 {
     id: 'eastbplMarker',
@@ -132,8 +112,8 @@ const data = [
     date: '2014',
     architect: 'William Rawn Associates',
     cardTitle: 'East Boston Branch of the Boston Public Library',
-    cardDescription: 'lorem ipsum',
-    img: '/images/eastbpl.jpg',
+    cardDescription: 'Aimed at revitalizing oft-overlooked East Boston, this recent construction is a beautiful, functional space open to all.',
+    img: './images/eastbpl.jpg',
 },
 {
     id: 'abbotsfordMarker',
@@ -144,8 +124,8 @@ const data = [
     date: '1872',
     architect: 'Alden Frink',
     cardTitle: 'Abbotsford',
-    cardDescription: 'lorem ipsum',
-    img: '/images/abbotsford.webp',
+    cardDescription: 'An example of the high victorian gothic style, this building was once a private residence but is now the Museum of the National Center of Afro-American Artists and on the National Register of Historic Places.',
+    img: './images/abbotsford.webp',
 },
 {
     id: 'blakeMarker',
@@ -156,8 +136,8 @@ const data = [
     date: '1661',
     architect: 'James Blake',
     cardTitle: 'James Blake House',
-    cardDescription: 'lorem ipsum',
-    img: '/images/blake.webp',
+    cardDescription: 'This post-medieval house is the oldest house in Boston and on the National Register of Historic Places. ',
+    img: './images/blake.webp',
 },
 {
     id: 'treehouseMarker',
@@ -168,8 +148,8 @@ const data = [
     date: '2012',
     architect: 'ADD Inc',
     cardTitle: 'Tree House Residence',
-    cardDescription: 'lorem ipsum',
-    img: '/images/treehouse.jpg',
+    cardDescription: 'This MassArt Residence hall is designed in tandem with the surrounding landscaping and meant to provide dynamic outdoor space for students.',
+    img: './images/treehouse.jpg',
 },
 {
     id: 'mfaMarker',
@@ -180,8 +160,8 @@ const data = [
     date: '1909',
     architect: 'Guy Lowell',
     cardTitle: 'Museum of Fine Arts',
-    cardDescription: 'lorem ipsum',
-    img: '/images/mfa.jpg',
+    cardDescription: "Today's Beaux Arts building is not the earliest iteration of the MFA, but it is certainly the most internationally celebrated. Along with the Copley Boston Public Library, the MFA features murals by John Singer Sargent.",
+    img: './images/mfa.jpg',
 },
 {
     id: 'izzystuMarker',
@@ -192,8 +172,8 @@ const data = [
     date: '1902',
     architect: 'Willard T. Sears',
     cardTitle: 'Isabella Stewart Gardner Museum',
-    cardDescription: 'lorem ipsum',
-    img: '/images/izzy.jpg',
+    cardDescription: 'Famed for the art heist that took place, the Isabella Stewart Gardner Museum is a combination of influences collected by its namesake. Gardner was extremely hands-on with the construction.',
+    img: './images/izzy.jpg',
 },
 ]
 

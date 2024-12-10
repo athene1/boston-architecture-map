@@ -1,12 +1,8 @@
-/* ===== YOUR CSS GOES HERE ===== */
-/* ===== START BY IMPORTING YOUR FONTS ===== */ 
-/* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
-
-/* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Roboto:wght@300;400;700&display=swap');
 body {
     background: #BBE8F2;
     padding: .5rem 1rem;
+    margin: 0;
 }
 p {
     font-size: 1em;
@@ -64,30 +60,31 @@ ul {
   }
 
   li a {
-    display: block;
+    
     padding: 1em;
     text-decoration: none;
     font-family: Rakkas, Georgia, 'Times New Roman', Times, serif;
     float: right;
     color:#794b1a;
+    vertical-align: middle;
+    line-height: 1.15;
   }
-
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
 ul.sources, ul.documents {
     justify-content: flex-start;
     gap: 2px;
     padding-left: 1rem;
 }
 
-header {
-    display: block;
-    width: 100%;
-}
-
 label {
     font-size: 1em;
     font-family: Roboto, Helvetica, sans-serif;
 }
-
 
 #map { 
     height: 600px;
@@ -183,4 +180,3 @@ li img {
         font-size: 3.5rem;
     }
 }
-
