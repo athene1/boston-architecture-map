@@ -195,8 +195,6 @@ const data = [
 
 function markerOnClick(data) {
     console.log('markerOnClick is running');
-    console.log(e.cardTitle);
-    console.log(data.cardTitle);
     const cardDiv = document.createElement(`div`);
     const cardTitle = document.createElement(`h1`);
     h1.textContent = data.cardTitle;
@@ -221,7 +219,7 @@ const element = document.getElementById("div1");
 element.appendChild(para);
 */
 data.forEach(function(data) {
-    const marker = L.marker(data.latlong, {tags: [(data.markerTags)]}).on('click', markerOnClick(data)).addTo(map).bindPopup(data.markerText).openPopup();
+    const marker = L.marker(data.latlong, {tags: [(data.markerTags)]}).on('click', markerOnClick).addTo(map).bindPopup(data.markerText).openPopup();
 });
 /*
 function showCard(data) {
