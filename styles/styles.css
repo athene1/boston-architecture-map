@@ -83,12 +83,6 @@ header {
     width: 100%;
 }
 
-div #boathouse {
-    display: none;
-    background-color: #E5BDC6;
-    padding: 1rem;
-}
-
 label {
     font-size: 1em;
     font-family: Roboto, Helvetica, sans-serif;
@@ -119,8 +113,32 @@ div.main {
 div.welcome {
     background: #794b1a;
     color: white;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     margin: 0rem 1rem;
+}
+
+div.card {
+    background:#BBE8F2;
+}
+
+div.card h1{
+    font-size: 3rem;
+    padding: 1rem 1.5rem 0rem;
+}
+
+div.card p {
+    font-size: 1.5rem;
+    padding: 0rem 1.5rem 1rem;
+    color:#794b1a;
+    margin-bottom: 0;
+}
+
+div.card img {
+    max-width: 300px;
+    align-content: center;
+    display: block;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 div.leaflet-popup-content {
@@ -134,3 +152,35 @@ div.leaflet-popup-content {
 .tag-filter-tags-container {
     left: 30px;
 }
+
+ul.imgsrc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 1rem;
+    gap: 2px;
+}
+
+ul.imgsrc li a {
+    float: left;
+}
+
+li img {
+    max-width: 150px;
+    padding: .5rem;
+}
+
+@media screen and (max-width:1200px) {
+    div.main {
+       display: flex;
+       flex-direction: column;
+       gap: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
