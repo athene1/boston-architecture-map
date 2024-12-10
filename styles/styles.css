@@ -1,10 +1,11 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START BY IMPORTING YOUR FONTS ===== */ 
 /* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
+
 /* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Roboto:wght@300;400;700&display=swap');
 body {
-    background: #D3AE95;
+    background: #BBE8F2;
     padding: .5rem 1rem;
 }
 p {
@@ -12,17 +13,28 @@ p {
     font-family: Roboto, Helvetica, sans-serif;
 }
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     font-family: Rakkas, Georgia, 'Times New Roman', Times, serif;
     margin: 0;
-    color: #752F2F;
-    background-color: #D3AE95;
-    padding: .5rem 1rem;
-    margin-bottom: .5rem;
+    color: #794b1a;
+    background-color: #BBE8F2;
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
     font-family: Rakkas, Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: .25rem;
+    color:#794b1a;
+    padding-left: 1rem;
+}
+
+div.welcome h2 {
+    font-family: Rakkas, Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    padding: .5rem 0rem;
+    font-size: 2rem;
 }
 
 b {
@@ -39,29 +51,41 @@ ul {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    gap: 2px;
+    margin: 0px;
   }
   
   li {
-    background: white;
     font-size: 1rem;
-    background: lightgray;
+    background: #E5BDC6;
   }
-  
+
+  li:hover {
+    background: #c8909c;
+  }
+
   li a {
     display: block;
     padding: 1em;
     text-decoration: none;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Rakkas, Georgia, 'Times New Roman', Times, serif;
     float: right;
+    color:#794b1a;
   }
 
-div.header {
-    display: flexbox;
+ul.sources, ul.documents {
+    justify-content: flex-start;
+    gap: 2px;
+    padding-left: 1rem;
+}
+
+header {
+    display: block;
+    width: 100%;
 }
 
 div #boathouse {
-    background-color: lightblue;
+    display: none;
+    background-color: #E5BDC6;
     padding: 1rem;
 }
 
@@ -78,14 +102,12 @@ label {
     align-self: center;
 }
 
-
-
 button {
     background-color: #CAEBFF;
-    color: #752F2F;
+    color: #794b1a;
     margin: .25rem;
     margin-left: 0rem;
-    border: solid 1px #752F2F;
+    border: solid 1px #794b1a;
     border-radius: .5rem;
     font-family: Roboto, Helvetica, sans-serif;
 }
@@ -95,7 +117,8 @@ div.main {
 }
 
 div.welcome {
-    background: linen;
+    background: #794b1a;
+    color: white;
     padding: 2rem 3rem;
     margin: 0rem 1rem;
 }
