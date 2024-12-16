@@ -29,7 +29,7 @@ const data = [
     architect: 'John Smibert & Charles Bulfinch',
     cardTitle: 'Faneuil Hall',
     cardDescription: 'This boston landmark fully burnt down and has been rebuilt with the original shell. Today, it is still a marketplace like it was in the 18th century.',
-    img: '.images/faneuil.jpg',
+    img: './images/faneuil.jpg',
 },
 {
     id: 'bplMarker',
